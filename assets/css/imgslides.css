@@ -1,0 +1,21 @@
+.picspace{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    top: 60px;
+}
+.picspace img{
+    min-width: 33.4%;
+    height: 300px;
+    object-fit: cover;
+    transform: translateX(0);
+    animation: start 5s linear infinite;
+}
+@keyframes start {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}

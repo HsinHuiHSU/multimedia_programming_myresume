@@ -1,0 +1,499 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Allerta Stencil',"微軟正黑體";
+}
+.d-flex{
+    display: flex;
+}
+/*標題*/
+header {
+    color: white;
+    background-color:rgb(184, 170, 170);
+    text-align: center;
+    height: 100px;
+    width: 100%;
+}
+
+header h2 {
+    position: relative;
+    top: 35px;
+    font-size: 50px;  
+}
+
+/*上面那列*/
+nav{
+    height: 60px;
+    background-color:rgb(184, 170, 170);
+    font-size: 22px;
+    text-align: center;    
+}
+nav ul{
+    margin: auto;
+    width: 510px;    
+}
+nav li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+nav a{
+    position: relative;
+    padding: 5px;
+    transition: 0.3s;
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    opacity: 0.8;
+}
+
+/*第一區塊*/
+.up {
+    background-color: black;
+    height: 550px;
+}
+
+/*有顏色那塊*/
+.top {
+    position: relative;
+    top: 47px;
+    left: 125px;
+    height: 450px;
+    background-color:rgb(184, 170, 170);
+    width: 750px;
+}
+
+.topintro {
+    position: relative;
+    top: 28px;
+    left: 70px;
+}
+
+.topintro img {
+    width: 610px;
+    border-radius: 10px;
+    transition: 0.5s;
+    opacity: 0.8;
+}
+
+.topintro img:hover {
+    transform: scale(1.08);
+    opacity: 1;
+}
+
+/*introduction*/
+.intro {
+    width: 500px;
+    text-align: left;
+    position: relative;
+    left: 780px;
+    bottom: 350px;
+    color: rgb(238, 226, 226);
+}
+#word {
+    text-align: left;
+    font-size: 18px;
+    position: relative;
+    top: 30px;
+    letter-spacing: 5px;
+}
+/*第二區大背景*/
+.view {
+    height: 2990px;
+    background-image: url("../img/BACK.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    position: relative;
+}
+/*第二區紫灰塊*/
+.content {
+    width: 1100px;
+    position: absolute;
+    top: 81px;
+    left: calc(50% - 550px);
+    height: 2800px;
+    background-color: rgba(92, 62, 62, 0.746);
+    border-radius: 20px; 
+}
+/*skill*/
+.skill {
+    padding: 5%;
+    width: 990px;
+    height: 360px;
+    border-bottom: 2px solid whitesmoke;
+    border-radius: 50px 50px 50px 50px;
+}
+.skill h1 {
+    width: 20px;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    color: rgb(243, 211, 209);
+    font-size: 36px;
+}
+/*進度條*/
+ul{
+    list-style: none;
+}
+.box{
+    display: flex;
+    justify-content: left;
+    padding: 0px 0px 0px 130px;  
+   
+}
+.skillname{
+    width: 180px;
+    height: 30px;
+    left: 50px;
+    font-size: 22px;
+    color: lightgrey;    
+}
+.loading {
+    background-color: #dbccc1;
+    width: 280px;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: #beb6b0 3px solid;
+    overflow: hidden;
+    position: relative;
+    left: 110px;
+  }
+  
+#sk1 {
+    height: 24px;
+    width: 70%;
+    background-color:#5f4b3e;
+    animation: ski1 5s ease;
+    animation-iteration-count: infinite;
+}
+#sk2 {
+    height: 24px;
+    width: 85%;
+    background-color: #5f4b3e;
+    animation: ski2 5s ease;
+    animation-iteration-count: infinite;
+}
+#sk3 {
+    height: 24px;
+    width: 72%;
+    background-color: #5f4b3e;
+    animation: ski3 5s ease;
+    animation-iteration-count: infinite;
+}
+#sk4 {
+    height: 24px;
+    width: 86%;
+    background-color: #5f4b3e;
+    animation: ski4 5s ease;
+    animation-iteration-count: infinite;
+}
+#sk5 {
+    height: 24px;
+    width: 95%;
+    background-color: #5f4b3e;
+    animation: ski5 5s ease;
+    animation-iteration-count: infinite;
+}
+#sk6 {
+    height: 24px;
+    width: 70%;
+    background-color: #5f4b3e;
+    animation: ski6 5s ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ski1 {
+    0% {
+      width: 0;
+    }
+  
+    100% {
+      width: 70%;
+    }
+}
+@keyframes ski2 {
+    0% {
+      width: 0;
+    }
+  
+    100% {
+      width: 85%;
+    }
+}
+@keyframes ski3 {
+    0% {
+      width: 0;
+    }
+  
+    100% {
+      width: 72%;
+    }
+}
+@keyframes ski4 {
+    0% {
+      width: 0;
+    }
+  
+    100% {
+      width: 86%;
+    }
+}
+@keyframes ski5 {
+    0% {
+      width: 0;
+    }
+  
+    100% {
+      width: 95%;
+    }
+}
+@keyframes ski6 {
+    0% {
+      width: 0;
+    }
+  
+    100% {
+      width: 70%;
+    }
+}
+.time{
+    border-right: #5f4b3e 2px solid;
+    margin: 0 5px;
+}
+/*project*/
+.project{
+    position: relative;
+    top: 0px;
+    height: 800px;
+    border-bottom: 2px solid whitesmoke;
+    border-radius: 50px 50px 50px 50px;
+}
+.project h1 {
+    width: 180px;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    color:rgb(243, 211, 209);
+    font-size: 36px;
+  
+}
+.project h2{
+    color:rgb(233, 192, 192); 
+    top: 10px;
+}
+.project p{
+    color:lightgray;
+    letter-spacing: 0.9px;
+    
+}
+.word{
+    color: lightgrey;
+    position: relative;
+    left: 520px;
+    top: -690px;
+    width: 500px;
+    font-size: 18px;
+}
+.word a{
+    width: 80px;
+    padding: 10px;
+    border: 5px solid rgb(184, 138, 124);
+    position: relative;
+    top: 10px;
+    left: 2px;
+    color: white;
+}
+.zoom {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease;
+    }
+.zoom:hover{
+    transform: scale(1.08);
+    }
+/*experiences*/
+.experiences{
+    position: relative;
+    top: 8px;
+    height: 500px;
+    border-bottom: 2px solid #f5f5f5;
+    border-radius: 50px 50px 50px 50px;
+}
+.experiences h1 {
+    width: 20px;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    color: rgb(243, 211, 209);
+    font-size: 36px;
+    }
+.experiences h2{
+    color: lightgrey;
+    position: relative;
+    left: -460px;
+    top: 770px;
+    width: 500px;
+    font-size: 22px;
+    z-index:100;
+}
+.word2{
+    color: lightgrey;
+    position: relative;
+    left: 500px;
+    top: -650px;
+    width: 500px;
+    font-size: 18px;
+}
+.word4{
+    color: lightgrey;
+    position: relative;
+    left: 330px;
+    top: -820px;
+    width: 750px;
+    font-size: 18px;
+}
+.zoom3 {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease;
+    }
+.zoom3:hover{
+    transform: scale(1.08);
+    color: rgb(233, 175, 175);
+    }
+.timebox{
+    width: 100px;
+    height: 580px;
+    position: relative;
+    top: -220px;
+    left: 230px;
+}
+.circle{
+    position: absolute;
+    top: 0; 
+    left: calc(50% - 10px);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border:5px pink solid;
+    background-color: #fff;
+}
+.circle1{
+    top: 20px;
+}
+.circle2{
+    top: 80px;
+}
+.circle3{
+    top: 140px;
+}
+.circle4{
+    top: 200px;
+}
+.circle5{
+    top: 260px;
+}
+
+.timeline{
+    margin: auto;
+    width: 4px;
+    height: 300px;
+    background-color: #000;
+}    
+/*background*/
+.background{
+    position: relative;
+    top: 8px;
+    height: 600px;
+    border-bottom: 2px solid whitesmoke;
+    border-radius: 50px 50px 50px 50px;
+}
+.background h1 {
+    width: 250px;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    color:rgb(243, 211, 209);
+    font-size: 36px;
+    transition: 0.5s;
+}
+.background h2 {
+    font-size: 22px;
+    color: lightgrey;
+    position: absolute;
+    left: -470px;
+    top: 550px;
+    letter-spacing: 2px;  
+}
+.word3{
+    color: lightgrey;
+    position: relative;
+    left: 520px;
+    top: -650px;
+    width: 500px;
+    font-size: 18px;
+}
+.picspace{
+    height: 510px;
+    position: relative;
+    top: 20px;
+}
+.picspace img{
+    width: 300px;    
+}
+.zoom2 {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease;
+    }
+.zoom2:hover{
+    transform: scale(1.08);
+    color: rgb(233, 175, 175);
+    }
+
+/*footer最下面*/
+footer{
+    width: 100%;
+    height: 160px;
+    background-color:rgb(184, 170, 170);
+    padding-top: 15px; 
+}
+footer h3{
+    text-align: center;
+    font-family: marker felt, fantasy ; text-align: center;
+    color: lightgray;
+}
+.contactspace{
+    width: 400px;
+    position: relative;
+    left: calc(50% - 200px);
+}
+/*按鈕*/
+.bt{
+    width: 50px;
+    height: 50px;
+    border-radius: 0%;
+    position: fixed;
+    bottom: 16px;
+    right: 25px;
+    background-color: rgb(219, 148, 148);
+    transition: 0.25s;
+    z-index: 99;
+    transform: scale(1.06);
+}
+.bt:hover{
+    opacity: 0.8;   
+}
+.bt h1{
+    position: relative;
+    top: 15px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
